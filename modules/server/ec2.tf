@@ -10,6 +10,6 @@ resource "aws_instance" "web" {
   }
       user_data = <<-EOF
   	#!/bin/bash
-        sudo apt install nginx -y
+        sudo yum install nginx -y
   EOF
 }
